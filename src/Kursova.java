@@ -5,7 +5,7 @@ import java.awt.*;
         import javax.swing.*;
         import static sun.applet.AppletResourceLoader.getImage;
 
-public class Kursova  extends JApplet implements MouseListener {
+public class Kursova extends JApplet implements MouseListener {
     int x, y;
     int i=0;
 
