@@ -1,4 +1,4 @@
-import java.awt.*;
+        import java.awt.*;
         import java.awt.event.*;
         import java.net.MalformedURLException;
         import java.net.URL;
@@ -23,7 +23,7 @@ public class Kursova extends JApplet implements MouseListener {
     public void mouseEntered(MouseEvent e) {
     }
 
-    public void mouseExited(MouseEvent e) {
+    public void mouseExited(MouseEvent e)  {
     }
 
     public void mousePressed(MouseEvent e) {
@@ -40,16 +40,33 @@ public class Kursova extends JApplet implements MouseListener {
         tr = new MediaTracker(this);
 		/* Выводим рисунок 1 */
         try {
-            img = getImage(new URL("https://i.imgur.com/uupQTAM.png"));
+            img = getImage(new URL("https://i.imgur.com/orM0ZB6.jpg"));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
         g.drawImage(img, 10, 10, this);
 
-        if (x > 30 && x < 90 && y > 60 && y < 120 || x > 200 && x < 260 && y > 60 && y < 120) {
-            // Выводим рисунок 3
+        if (x > 265 && x < 300 && y > 155 && y < 205 || x > 475 && x < 505 && y > 155 && y < 205) {
+            // Выводим рисунок
             try {
-                img = getImage(new URL("https://i.imgur.com/iKrtuuN.png"));
+                img = getImage(new URL("https://i.imgur.com/iGSwrBq.jpg"));
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+            g.drawImage(img, 10, 10, this);
+            try {
+                img = getImage(new URL("https://i.imgur.com/qviHPzl.jpg"));
+                Thread.sleep(2000);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            g.drawImage(img, 10, 10, this);
+        }
+        if (x > 260 && x < 330 && y > 90 && y < 125 || x > 465 && x < 545 && y > 90 && y < 125) {
+            try {
+                img = getImage(new URL("https://i.imgur.com/yeec6I3.jpg"));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
