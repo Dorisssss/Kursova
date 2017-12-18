@@ -72,21 +72,21 @@ public class Kursova extends JApplet implements MouseListener {
             }
             g.drawImage(img, 10, 10, this);
         }
-        if (x > 45 && x < 82 && y > 171 && y < 206){
+        if (x > 260 && x < 310 && y > 290 && y < 335){
             try {
-                img2 = getImage(new URL("https://i.imgur.com/lIj6Hnk.png"));
+                img = getImage(new URL("https://i.imgur.com/E0qvBCn.jpg"));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-            g.drawImage(img2, 45, 171, this);
+            g.drawImage(img, 10, 10 this);
         }
-        if (x > 94 && x < 131 && y > 171 && y < 206){
+        if (x > 325 && x < 375 && y > 290 && y < 335){
             try {
-                img3 = getImage(new URL("https://i.imgur.com/lIj6Hnk.png"));
+                img = getImage(new URL("https://i.imgur.com/lCgqmt3.jpg"));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-            g.drawImage(img3, 94, 171, this);
+            g.drawImage(img, 10, 10, this);
         }
         if (x > 155 && x < 192 && y > 171 && y < 206){
             try {
